@@ -170,9 +170,6 @@ to { width: 60% }
 from, to { border-color: transparent }
 50% { border-color:#f0f5f5; }
 }
-
-
-
 }
 
 
