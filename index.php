@@ -62,10 +62,6 @@
 }
 
 
-
-
-
-
 @media screen and (min-device-width: 501px) and (max-device-width: 1170px){
 
   #home{
