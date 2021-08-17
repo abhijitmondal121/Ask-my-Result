@@ -33,8 +33,6 @@
   .contai{
     background-color:#f0f5f5;
   }
-
-
    h2 {
      font-size:45px;
      font-family: Georgia, serif;
