@@ -266,13 +266,6 @@ from, to { border-color: transparent }
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
 <?php include "partials/footer.php";  ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
