@@ -114,12 +114,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body>
   <?php include "partials/header.php"; ?>
 
-
-
-
-
-
-
 <div class="container my-2 ">
 
 <h1>Welcome to Ask My Result Community</h1>
