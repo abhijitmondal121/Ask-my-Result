@@ -206,10 +206,6 @@ from, to { border-color: transparent }
   </a>
 </div>
 
-
-
-
-
 </div>
 <div class="containe">
 <center><h2 class="py-2">The success gives student better future</h2></center>
