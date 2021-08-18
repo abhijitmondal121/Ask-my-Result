@@ -113,9 +113,6 @@
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
-
-
-
 }
 
 
