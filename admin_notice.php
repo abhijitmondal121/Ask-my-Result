@@ -106,12 +106,6 @@ th{
   box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
 
 }
-
-
-
-
-
-
 @media screen and (min-device-width: 501px) and (max-device-width: 1170px){
 
 
