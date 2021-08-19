@@ -216,9 +216,6 @@ from, to { border-color: transparent }
 </div>
 </form>
 </div>
-
-
-
 <div class="col-md-2"></div>
 <div class="col-md-5" id="lform">
 
