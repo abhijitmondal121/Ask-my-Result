@@ -8,9 +8,6 @@ if(isset($_GET['delete'])){
   $result = mysqli_query($conn, $sql);
 }
 
-
-
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $notice = $_POST['notice'];
 
