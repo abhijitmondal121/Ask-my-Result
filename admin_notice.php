@@ -248,13 +248,6 @@ from, to { border-color: transparent }
       </tbody>
     </table>
 
-
-
-
-
-
-
-
 </div>
 
       </div>
