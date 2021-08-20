@@ -157,8 +157,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 </div>
 
-
-
 <?php include "partials/footer.php";  ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
