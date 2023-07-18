@@ -32,7 +32,6 @@
   }
 
 
-
    h2 {
      font-size:45px;
      font-family: Georgia, serif;

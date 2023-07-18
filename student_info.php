@@ -25,6 +25,7 @@
     border-radius: 90px;
   }
 
+  
   h1{
     font-size:58px;
     font-family: Georgia, serif;

@@ -44,6 +44,7 @@
   to { width: 60% }
 }
 
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }

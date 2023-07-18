@@ -4,7 +4,6 @@ $insert = false;
 $update = false;
 $delete = false;
 
-
 if(isset($_GET['delete'])){
   $sno = $_GET['delete'];
   $delete = true;

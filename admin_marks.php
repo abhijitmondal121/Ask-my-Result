@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $tmp_name=$_FILES['photo']['tmp_name'];
 
 
+    
     if ($roll==''||$name==''||$class==''||$c==''||$cpp==''||$java==''||$python==''||$js==''||$react==''){
         echo"<script>alert('Please fill up all details')</script>";
     }

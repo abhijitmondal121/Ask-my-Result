@@ -16,6 +16,7 @@
       color:white;
     }
 
+    
   #image{
     /* maigin-top:30px; */
     height:380px;

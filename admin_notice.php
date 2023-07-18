@@ -10,7 +10,6 @@ if(isset($_GET['delete'])){
 
 
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $notice = $_POST['notice'];
 
