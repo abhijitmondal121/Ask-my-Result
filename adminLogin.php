@@ -31,7 +31,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </div>';
    
   }
-}   
+}
+ 
+
+
+
+
+        
  ?>    
 
 
@@ -54,8 +60,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       color:white;
     }
   #image{
-    height:450px;
-    width:320px;
+    height:400px;
+    width:270px;
 
     
   }
@@ -114,15 +120,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body>
   <?php include "partials/header.php"; ?>
 
+
+
+
+
+
+
 <div class="container my-2 ">
 
 <h1>Welcome to Ask My Result Community</h1>
 <div class="row">
+<div class="col-md-1"></div>
+
 <div class="col-md-4" >
 <img src="partials/admin.png" id="image" alt="" srcset="">
 </div>
-<div class="col-md-4"></div>
-<div class="col-md-4 " id="lform">
+<div class="col-md-2"></div>
+<div class="col-md-5 " id="lform">
 <h2>Admin Login</h2>
 <form  method="POST">
 
@@ -151,6 +165,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php include "partials/footer.php";  ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

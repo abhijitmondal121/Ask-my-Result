@@ -11,7 +11,7 @@
     <title>Ask My Result!</title>
   </head>
   <style>
-   .containe{
+   body{
       background: #292C35;
       color:white;
     }
@@ -30,9 +30,9 @@
   #about-text{
     font-size:20px;
   }
-  .contai{
-    background-color:#f0f5f5;
-  }
+
+
+
    h2 {
      font-size:45px;
      font-family: Georgia, serif;
@@ -52,11 +52,16 @@
   from { width: 0 }
   to { width: 60% }
 }
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
+
+
+
+
 
 
 @media screen and (min-device-width: 501px) and (max-device-width: 1170px){
@@ -76,9 +81,7 @@
   #about-text{
     font-size:18px;
   }
-  .contai{
-    background-color:#f0f5f5;
-  }
+
   h1{
     font-size:35px;
   }
@@ -108,6 +111,9 @@
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
+
+
+
 }
 
 
@@ -117,7 +123,7 @@
   height:320px;
 }
 #image{
-  height:320px;
+  height:330px;
   width:250px;
   margin-left:20px;
   
@@ -132,9 +138,7 @@
 #about_section{
   mergin-top:30px;
 }
-.contai{
-  background-color:#f0f5f5;
-}
+
 h1{
   font-size:30px;
 }
@@ -164,6 +168,9 @@ to { width: 60% }
 from, to { border-color: transparent }
 50% { border-color:#f0f5f5; }
 }
+
+
+
 }
 
 
@@ -177,22 +184,31 @@ from, to { border-color: transparent }
 
 
 
+
+
+
+
+
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 "id="home" src="partials/b1.jpg" alt="First slide">
+      <img class="d-block w-100 "id="home" src="partials/bb7.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " id="home" src="partials/b3.jpg" alt="Second slide">
+      <img class="d-block w-100 " id="home" src="partials/bb6.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" id="home" src="partials/ab.jpg" alt="Third slide" >
+      <img class="d-block w-100" id="home" src="partials/bb3.jpg" alt="Third slide" >
     </div>
+
+
 
 
   </div>
@@ -205,6 +221,30 @@ from, to { border-color: transparent }
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 <div class="containe">

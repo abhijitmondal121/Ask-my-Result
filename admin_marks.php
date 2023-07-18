@@ -75,8 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
      font-size:32px;
      font-family: Georgia, serif;
      text-align:center;
-  
-  
 }
 
 
@@ -86,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   padding: 30px 30px;
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
+  box-shadow: 0px 0PX 15PX 0PX rgb(104, 102, 102);
 
 }
 #lform{

@@ -17,9 +17,9 @@
     }
 
   #image{
-    maigin-top:30px;
-    height:480px;
-    width:520px;
+    /* maigin-top:30px; */
+    height:380px;
+    width:370px;
     border-radius: 30px;
   }
 
@@ -28,41 +28,22 @@
     font-family: Georgia, serif;
   }
 
-   h2 {
-     font-size:38px;
-     font-family: Georgia, serif;
-  
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 8.5s steps(40,end),
-    blink-caret .75s step-end ;
-}
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
-#lform{
+  #lform{
   background:black;
   padding:40px 20px;
-  margin-top: 50px;
+  margin-top: 100px;
  
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
+  box-shadow:15px 20PX 30PX blue;
 
 }
+
+#border{
+    box-shadow: -2px 0px 0px blue ;
+  }
 
 
 
@@ -194,19 +175,17 @@ from, to { border-color: transparent }
 
 
 
-<div class="container my-4 ">
+<div class="container pt-3 ">
 
-<center><h1 class="my-3">Welcome to Student Dashbord</h1></center>
+<center><h1 class="mt-3">Welcome to Student Dashbord</h1></center>
 
-<center><?php echo '<h2  >Student:'.$_SESSION['name'].'</h2>'; ?></center>
-<div class="row px-3 my-5">
+<div class="row py-3 px-3" id="lform" >
 
 
-<div class="col-md-4 " id="lform" >
-
+<div class="col-md-4 my-4  pt-5">
 
 <div>
-<a href="student_edit.php"><button type="button" class="btn btn-block btn-outline-success py-4 mt-5"style="font-size:18px;">Student Dashbord</button></a>
+<a href="student_edit.php"><button type="button" class="btn btn-block btn-outline-success py-4 mt-2"style="font-size:18px;">Student Dashbord</button></a>
 <!-- <a class="block" href="/Online_Result_System/student_marks.php" ></a> -->
 </div>
 <div>
@@ -220,11 +199,16 @@ from, to { border-color: transparent }
 <div>
 <!-- <a class="block" href="/Online_Result_System/admin_notice.php" style = "margin-left:3%;"  >Notice</a> -->
 <a href="student_result.php"><button type="button" class="btn btn-block btn-outline-primary py-4 mt-2"style="font-size:18px;">Result</button></a>
-</div> 
 </div>
-<div class="col-md-3"></div>
-<div class="col-md-5 " >
+</div>
+
+<div class="col-md-2 "></div>
+
+<div class="col-md-1 "id="border"></div>
+
+<div class="col-md-5  my-4" >
 <img src="partials/stu2.png" id="image" alt="" srcset="">
+
 </div>
 </div>
 </div>

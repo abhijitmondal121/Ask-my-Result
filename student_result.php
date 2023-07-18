@@ -53,14 +53,16 @@
 #lform{
   background:black;
   padding:40px 20px;
-  margin-top: 50px;
+  margin-top: 100px;
  
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
+  box-shadow:15px 20PX 30PX blue;
 
 }
-
+#border{
+    box-shadow: -2px 0px 0px blue ;
+  }
 
 
 
@@ -166,13 +168,13 @@ from, to { border-color: transparent }
 
 
 
-<div class="container my-5 ">
-<center><h1 class="mb-3 mt-0">Welcome to Student Result</h1></center>
+<div class="container pt-3 ">
+<center><h1 class="mb-3 mt-3">Welcome to Student Result</h1></center>
 
-<div class="row py-3 px-3">
+<div class="row py-2 px-3" id="lform">
 
-<div class="col-md-1" ></div>
-<div class="col-md-4   "id="lform">
+
+<div class="col-md-4 pt-5">
 
 <div>
 <a href="student_edit.php"><button type="button" class="btn btn-block btn-outline-success py-4 mt-5"style="font-size:18px;">Student Dashbord</button></a>
@@ -193,8 +195,8 @@ from, to { border-color: transparent }
 </div>
 
 <div class="col-md-2" ></div>
-
-<div class="col-md-4 mt-5 " id="lform">
+<div class="col-md-1" id="border"></div>
+<div class="col-md-5 my-4" >
 <div>
 
 
@@ -221,7 +223,7 @@ $query = "SELECT * FROM marks WHERE roll = '$roll' AND class = '$class'";
 $result = mysqli_query($conn,$query);
 $count = mysqli_num_rows($result);
 ?>
-<table border = "2" cellspacing = "3" cellpadding = "3" align = "center" width = "260px" height = "100px" >
+<table border = "2" cellspacing = "3" cellpadding = "3" align = "center" width = "300px"  >
 
         
 

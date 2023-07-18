@@ -42,6 +42,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
 ?>
 
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -61,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
   #image{
     height:500px;
-    width:620px;
+    width:500px;
     border-radius: 25px;
   }
 
@@ -118,16 +120,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
+
+
+
 <div class="container my-5 ">
 
 
 <h1>Welcome to Ask My Result Community</h1>
 <div class="row px-3">
-<div class="col-md-8" >
+<div class="col-md-6" >
 <img src="partials/stu1.png" id="image" alt="" srcset="">
 </div>
+<div class="col-md-1" ></div> 
 
-<div class="col-md-4 mt-5 pt-5 px-2">
+<div class="col-md-5 mt-5 pt-5 px-2">
 <h2>Student Login</h2>
 <form  method="POST">
 
@@ -153,9 +159,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </form>
 </div>
 
+
+
+
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <?php include "partials/footer.php";  ?>
     <!-- Optional JavaScript -->

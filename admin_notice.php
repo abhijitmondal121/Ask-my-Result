@@ -8,6 +8,9 @@ if(isset($_GET['delete'])){
   $result = mysqli_query($conn, $sql);
 }
 
+
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $notice = $_POST['notice'];
 
@@ -59,6 +62,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       background: #292C35;
       color:white;
     }
+
+    .vertical-line{
+        border-left: 2px solid white;
+        display: inline-block;
+        height: 305px;
+        margin: 10px   0px;
+      }
+
       h1{
     font-size:58px;
     font-family: Georgia, serif;
@@ -90,8 +101,8 @@ th{
  
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
-
+  box-shadow: 0px 0PX 15PX 0PX rgb(104, 102, 102);
+  
 }
 #lforml{
   background:black;
@@ -100,9 +111,15 @@ th{
  
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
+  box-shadow: 0px 0PX 15PX 0PX rgb(104, 102, 102);
 
 }
+
+
+
+
+
+
 @media screen and (min-device-width: 501px) and (max-device-width: 1170px){
 
 
@@ -110,31 +127,13 @@ th{
     font-size:35px;
   }
 
-   h2 {
-     font-size:35px;
-     font-family: Georgia, serif;
-  
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 8.5s steps(40,end),
-    blink-caret .75s step-end ;
-}
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
+  .vertical-line{
+        display: none;
+      }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
+
+
 }
 
 
@@ -144,31 +143,9 @@ h1{
   font-size:26px;
 }
 
- h2 {
-   font-size:16px;
-   font-family: Georgia, serif;
-
-overflow: hidden; /* Ensures the content is not revealed until the animation */
-border-right: .15em solid white; /* The typwriter cursor */
-white-space: nowrap; /* Keeps the content on a single line */
-margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-letter-spacing: .10em; /* Adjust as needed */
-animation: 
-  typing 8.5s steps(40,end),
-  blink-caret .75s step-end ;
-}
-
-/* The typing effect */
-@keyframes typing {
-from { width: 0 }
-to { width: 60% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-from, to { border-color: transparent }
-50% { border-color: white; }
-}
+.vertical-line{
+        display: none;
+      }
 
 
 
@@ -191,9 +168,9 @@ from, to { border-color: transparent }
 
 <center><h1 class="mb-4 mt-5">Welcome to Admin Notice</h1></center>
 
-<div class="row px-3">
+<div class="row px-3" id="lforml">
 
-<div class="col-md-5 " id="lforml">
+<div class="col-md-5 my-4" >
 
 <form  method="POST">
 
@@ -213,9 +190,11 @@ from, to { border-color: transparent }
 </div>
 </form>
 </div>
-<div class="col-md-2"></div>
-<div class="col-md-5" id="lform">
 
+
+<div class="col-md-1"></div>
+<div class="col-md-1"><span class="vertical-line"></span></div>
+<div class="col-md-5 my-4" >
 
 <table class="table" id="myTable">
       <thead>
@@ -244,6 +223,13 @@ from, to { border-color: transparent }
 
       </tbody>
     </table>
+
+
+
+
+
+
+
 
 </div>
 

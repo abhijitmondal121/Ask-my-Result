@@ -15,52 +15,29 @@
       background: #292C35;
       color:white;
     }
-  #image{
-    height:550px;
-    width:620px;
-    margin-left:170px;
-  }
+
   h1{
     font-size:58px;
     font-family: Georgia, serif;
   }
-   h2 {
-     font-size:40px;
-     font-family: Georgia, serif;
-  
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 8.5s steps(40,end),
-    blink-caret .75s step-end ;
-}
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
 
 
 #lform{
   background:black;
   padding:40px 20px;
-  margin-top: 50px;
+  margin-top: 100px;
  
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
+  box-shadow:15px 20PX 30PX blue;
 
 }
+
+#border{
+    box-shadow: -2px 0px 0px blue ;
+  }
+
 
 
 
@@ -113,6 +90,9 @@
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
+
+
+
 }
 
 
@@ -187,13 +167,13 @@ from, to { border-color: transparent }
 
 
 
-<div class="container my-5 ">
-<center><h1 class="mb-3 my-2">Welcome to Student Notice</h1></center>
-<center><?php echo '<h2  >Student:'.$_SESSION['name'].'</h2>'; ?></center>
-<div class="row py-4 px-3">
+<div class="container pt-3 ">
+<center><h1 class="mb-3 mt-3">Welcome to Student Notice</h1></center>
+
+<div class="row py-3 px-3" id="lform" >
 
 
-<div class="col-md-4  "id="lform">
+<div class="col-md-4 my-4  pt-5">
 
 <div>
 <a href="student_edit.php"><button type="button" class="btn btn-block btn-outline-success py-4 mt-2"style="font-size:18px;">Student Dashbord</button></a>
@@ -213,9 +193,11 @@ from, to { border-color: transparent }
 </div>
 </div>
 
-<div class="col-md-3" ></div>
+<div class="col-md-2 "></div>
 
-<div class="col-md-5 " id="lform" >
+<div class="col-md-1 "id="border"></div>
+
+<div class="col-md-5  my-4" >
 <div>
 
 <!-- <h1 class="my-3">All Notice </h1></center> -->
@@ -266,6 +248,13 @@ from, to { border-color: transparent }
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
 <?php include "partials/footer.php";  ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -168,8 +168,8 @@ h1{
 
 
   
-  <div class="container my-4">
-    <div class="row mb-4 mt-2">
+  <div class="container my-5">
+    <div class="row mb-4 mt-2 px-2">
         <div class="col-md-3"><a href="admin_edit.php"><button type="button" class="btn btn-block btn-primary py-2 my-1 ">Admin Dashbord</button></a></div>
         <div class="col-md-3"><a href="admin_marks.php"><button type="button" class="btn btn-block btn-success py-2 my-1">Marks</button></a></div>
         <div class="col-md-3"><a href="admin_notice.php"><button type="button" class="btn btn-block btn-warning py-2 my-1 ">Notice</button></a></div>
@@ -188,7 +188,7 @@ h1{
   <div class="row" style="color:white;">
     <div class="col-md-12" style="color:white;">
 
-    <table class="table" id="myTable" style=" color:white; box-shadow: 5px 5PX 70PX 30PX white;">
+    <table class="table" id="myTable" style=" color:white; box-shadow: 5px 5pX 70PX 30PX white;">
       <thead>
         <tr>
           <th scope="col">S.No</th>

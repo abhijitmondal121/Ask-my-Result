@@ -15,6 +15,10 @@
       background: #292C35;
       color:white;
     }
+
+  .container{
+    min-height:350px;
+  }  
   #image{
     height:420px;
     width:520px;
@@ -30,30 +34,10 @@
   }
 
 
-   h2 {
+  h2 {
      font-size:32px;
      font-family: Georgia, serif;
-  
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 8.5s steps(40,end),
-    blink-caret .75s step-end ;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+     text-align:center;
 }
 #lform{
   background:black;
@@ -82,30 +66,10 @@
     font-size:35px;
   }
 
-   h2 {
-     font-size:35px;
+  h2 {
+     font-size:32px;
      font-family: Georgia, serif;
-    
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 8.5s steps(40,end),
-    blink-caret .75s step-end ;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+     text-align:center;
 }
 
 
@@ -126,31 +90,12 @@ h1{
   font-size:26px;
 }
 
- h2 {
-   font-size:16px;
-   font-family: Georgia, serif;
-
-overflow: hidden; /* Ensures the content is not revealed until the animation */
-border-right: .15em solid white; /* The typwriter cursor */
-white-space: nowrap; /* Keeps the content on a single line */
-margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
-letter-spacing: .10em; /* Adjust as needed */
-animation: 
-  typing 8.5s steps(40,end),
-  blink-caret .75s step-end ;
+h2 {
+     font-size:32px;
+     font-family: Georgia, serif;
+     text-align:center;
 }
 
-/* The typing effect */
-@keyframes typing {
-from { width: 0 }
-to { width: 60% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-from, to { border-color: transparent }
-50% { border-color: white; }
-}
 
 
 
@@ -166,44 +111,36 @@ from, to { border-color: transparent }
 
 
 
-<div class="container my-5 ">
+<div class="container my-5 pb-4">
+
+<div class="row mb-4 mt-2 px-2">
+
+        <div class="col-md-3"><a href="admin_edit.php"><button type="button" class="btn btn-block btn-primary  my-1 py-2">Admin Dashbord</button></a></div>
+        <div class="col-md-3"><a href="admin_marks.php"><button type="button" class="btn btn-block btn-success my-1 py-2">Marks</button></a></div>
+        <div class="col-md-3"><a href="admin_notice.php"><button type="button" class="btn btn-block btn-warning  my-1 py-2">Notice</button></a></div>
+        <div class="col-md-3"><a href="admin_student_edit.php"><button type="button" class="btn btn-block btn-secondary my-1 py-2">Student-Edit</button></a></div>
+
+    </div>
+
+
+
 <center><h1 class="my-4">Welcome to Admin Dashbord</h1></center>
 
+
 <div class="row px-3">
-
-
-<div class="col-md-4 my-4  " id="lform">
-  <center>
+<div class="col-md-4 my-2"></div>
+<div class="col-md-4 my-2">
 <?php
 
-    echo '<h2  >Admin:'.' '. $_SESSION['username'].'</h2>';
+echo '<h2  >Admin :'.' '. $_SESSION['username'].'</h2>';
 
 ?>
-</center>
-<div>
-<!-- <a class="block" href="/Online_Result_System/admin_notice.php" style = "margin-left:3%;"  >Notice</a> -->
-<a href="admin_edit.php"><button type="button" class="btn btn-block btn-outline-success py-4 mt-5">Admin Dashbord</button></a>
-</div> 
-<div>
-<a href="admin_marks.php"><button type="button" class="btn btn-block btn-outline-warning py-4 mt-2">Marks</button></a>
-<!-- <a class="block" href="/Online_Result_System/student_marks.php" ></a> -->
 </div>
-<div>
-<!-- <a class="block" href="/Online_Result_System/admin_notice.php" style = "margin-left:3%;"  >Notice</a> -->
-<a href="admin_notice.php"><button type="button" class="btn btn-block btn-outline-light py-4 mt-2">Notice</button></a>
-</div> 
-<div>
-<!-- <a class="block" href="/Online_Result_System/admin_notice.php" style = "margin-left:3%;"  >Notice</a> -->
-<a href="admin_student_edit.php"><button type="button" class="btn btn-block btn-outline-primary py-4 mt-2">Student-Edit</button></a>
-</div> 
-</div>
-<dv class="col-md-3"></dv>
-<div class="col-md-3 my-5 " >
-<img src="partials/r.jpg" id="image" alt="" srcset="">
-</div>
-</div>
+<div class="col-md-4 my-2"></div>
+
 </div>
 
+</div>
 
 
 

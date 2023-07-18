@@ -24,6 +24,7 @@
     width:200px;
     border-radius: 90px;
   }
+
   h1{
     font-size:58px;
     font-family: Georgia, serif;
@@ -37,31 +38,21 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
   letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 8.5s steps(40,end),
-    blink-caret .75s step-end ;
+
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
-
+#border{
+    box-shadow: -2px 0px 0px blue ;
+  }
 #lform{
   background:black;
   padding:40px 20px;
-  margin-top: 50px;
+  margin-top: 100px;
  
   color:white;
   border-radius:20px;
-  box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);
+  box-shadow:15px 20PX 30PX blue;
 
 }
 
@@ -197,10 +188,10 @@ from, to { border-color: transparent }
 <div class="container  pt-3" >
 <center><h1 class="mb-3 mt-3">Welcome to Student Information</h1></center>
 
-<div class="row py-3 px-3">
+<div class="row py-3 px-3" id="lform">
 
 
-<div class="col-md-4 " id="lform">
+<div class="col-md-4 my-4 pt-2" >
 
 <div>
 <a href="student_edit.php"><button type="button" class="btn btn-block btn-outline-success py-4 mt-5"style="font-size:18px;">Student Dashbord</button></a>
@@ -219,10 +210,11 @@ from, to { border-color: transparent }
 <a href="student_result.php"><button type="button" class="btn btn-block btn-outline-primary py-4 mt-2"style="font-size:18px;">Result</button></a>
 </div>
 </div>
+<div class="col-md-2 "></div>
 
-<div class="col-md-4" ></div>
+<div class="col-md-2"id="border"></div>
 
-<div class="col-md-4  " id="lform">
+<div class="col-md-4 my-4">
 <div>
 <?php
  if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] = true){
