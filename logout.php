@@ -2,6 +2,6 @@
 session_start();
 echo"logging you out please wait";
 session_destroy();
-header("Location:/ask_my_result/index.php");
+header("Location:/ask-my-result/index.php");
 ?>
 
